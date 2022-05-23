@@ -13,7 +13,7 @@ classifiers = [
     "Framework :: Django",
     "Programming Language :: Python :: 3",
 ]
-dependencies = []
+dependencies = ["Django"]
 dynamic = ["version"]
 
 
@@ -24,8 +24,8 @@ dev = [
 docs = [
     "Sphinx",
     "sphinx-autodoc-typehints",
-    "django",
 ]
+
 
 [tool.setuptools.dynamic]
 version = {attr = "anfema_django_utils.__version__"}
