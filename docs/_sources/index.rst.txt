@@ -14,6 +14,7 @@ Welcome to anfema-django-utils's documentation!
    :toctree: _autosummary
    :recursive:
 
+   anfema_django_utils.apps
    anfema_django_utils.db
 
 

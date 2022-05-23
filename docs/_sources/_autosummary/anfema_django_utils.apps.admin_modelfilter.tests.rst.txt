@@ -1,0 +1,29 @@
+anfema\_django\_utils.apps.admin\_modelfilter.tests
+===================================================
+
+.. automodule:: anfema_django_utils.apps.admin_modelfilter.tests
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      ModelfilterTestCase
+   
+   
+
+   
+   
+   
+
+
+

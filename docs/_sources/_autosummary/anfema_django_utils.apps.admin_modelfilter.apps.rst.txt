@@ -1,0 +1,29 @@
+anfema\_django\_utils.apps.admin\_modelfilter.apps
+==================================================
+
+.. automodule:: anfema_django_utils.apps.admin_modelfilter.apps
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      AdminModelfilterConfig
+   
+   
+
+   
+   
+   
+
+
+
