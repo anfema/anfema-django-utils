@@ -28,4 +28,5 @@
    :recursive:
 
    anfema_django_utils.db.functions
+   anfema_django_utils.db.mixins
 

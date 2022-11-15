@@ -1,0 +1,29 @@
+anfema\_django\_utils.db.mixins
+===============================
+
+.. automodule:: anfema_django_utils.db.mixins
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      ChangedFieldValuesModelMixin
+   
+   
+
+   
+   
+   
+
+
+
