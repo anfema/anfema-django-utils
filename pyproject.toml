@@ -31,7 +31,6 @@ docs = [
 [tool.black]
 line-length = 120
 skip-string-normalization = true
-extend-exclude = 'migrations'
 
 
 [tool.isort]
@@ -39,5 +38,4 @@ line_length = 120
 profile = "black"
 known_django = "django"
 sections = ["FUTURE", "STDLIB", "DJANGO", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
-extend_skip = ["migrations"]
 lines_after_imports = 2
