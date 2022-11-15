@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61", "setuptools_scm", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
 
 
 [project]
@@ -13,6 +13,7 @@ classifiers = [
     "Framework :: Django",
     "Programming Language :: Python :: 3",
 ]
+requires-python = ">=3.7"
 dependencies = ["Django"]
 dynamic = ["version"]
 
@@ -25,15 +26,6 @@ docs = [
     "Sphinx",
     "sphinx-autodoc-typehints",
 ]
-
-
-[tool.setuptools.dynamic]
-version = {attr = "anfema_django_utils.__version__"}
-
-
-[tool.setuptools.packages.find]
-include = ["anfema_django_utils*"]
-namespaces = false
 
 
 [tool.black]
