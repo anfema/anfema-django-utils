@@ -1,7 +1,7 @@
 /* copy of django's #toolbar */
 #admin-dashboard-filter-toolbar {
     padding: 8px 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     border-top: 1px solid var(--hairline-color);
     border-bottom: 1px solid var(--hairline-color);
     background: var(--darkened-bg);
@@ -25,6 +25,7 @@
     display: none;
 }
 
-#nav-sidebar #admin-dashboard-filter-toolbar {
-    margin-top: 15px;
+/* hide django's implementation of the sidebar filter */
+#nav-filter {
+    display: none;
 }
