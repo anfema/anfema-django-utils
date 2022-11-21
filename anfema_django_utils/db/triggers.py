@@ -46,13 +46,13 @@ class DenyFieldUpdateTrigger(BaseConstraint):
 
         if schema_editor.connection.vendor == "postgresql":
             return f"""
-                CREATE OR REPLACE FUNCTION {name}() RETURNS trigger
+                CREATE FUNCTION {name}() RETURNS trigger
                    LANGUAGE plpgsql AS
                 $$BEGIN
                    RAISE EXCEPTION {error_message};
                 END;$$;
 
-                CREATE OR REPLACE TRIGGER {name}
+                CREATE TRIGGER {name}
                    BEFORE UPDATE OF {field} ON {table}
                    FOR EACH ROW
                    WHEN (OLD.{field} != NEW.{field})
