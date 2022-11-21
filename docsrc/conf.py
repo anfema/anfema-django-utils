@@ -13,6 +13,7 @@
 import os
 import sys
 
+
 sys.path.insert(0, os.path.abspath('..'))  # noqa
 
 from anfema_django_utils import __version__  # noqa
