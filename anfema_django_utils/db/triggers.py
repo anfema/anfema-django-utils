@@ -1,4 +1,5 @@
 import contextlib
+import warnings
 
 import django
 from django.core.exceptions import ValidationError
@@ -8,7 +9,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 if django.VERSION < (4, 1):
-    raise RuntimeWarning(f"{__name__}.DenyFieldUpdateTrigger requires django v4.1+")
+    warnings.warn(f"{__name__}.DenyFieldUpdateTrigger requires django v4.1+")
 
 
 class DenyFieldUpdateTrigger(BaseConstraint):
@@ -34,8 +35,9 @@ class DenyFieldUpdateTrigger(BaseConstraint):
 
     def constraint_sql(self, model, schema_editor):
         # we can't embed the trigger sql into the "CREATE TABLE" statement
-        raise NotSupportedError(
-            f"{self.__class__.__qualname__} doesn't support the {schema_editor.connection.vendor} backend."
+        warnings.warn(
+            f"{self.__class__.__qualname__} doesn't support the {schema_editor.connection.vendor} backend. "
+            "Skipping creation of triggers."
         )
 
     def create_sql(self, model, schema_editor) -> str:
