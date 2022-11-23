@@ -98,6 +98,9 @@ class DenyFieldUpdateTrigger(BaseConstraint):
         if instance.pk is None:
             return
 
+        if exclude and self.field in exclude:
+            return
+
         queryset = model._default_manager.using(using)
 
         with contextlib.suppress(model.DoesNotExist):

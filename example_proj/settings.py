@@ -2,7 +2,7 @@
 Minimal settings file to develop anfema-django-utils.
 Use `settings_local.py` to override any settings.
 """
-
+import contextlib
 from pathlib import Path
 
 
@@ -26,6 +26,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'anfema_django_utils.apps.admin_modelfilter',
+    # app providing test models
+    'example_proj.test_app',
     # django
     'django.contrib.admin',
     'django.contrib.auth',
@@ -70,7 +72,7 @@ WSGI_APPLICATION = 'example_proj.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default': {  # overwrite in `settings_local.py`
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
@@ -117,3 +119,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Load local settings
+with contextlib.suppress(ImportError):
+    from .settings_local import *
