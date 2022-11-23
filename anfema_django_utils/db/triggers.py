@@ -27,13 +27,20 @@ class DenyFieldUpdateTrigger(BaseConstraint):
 
     def __init__(self, field, name, violation_error_message=None, trigger_error_message=None):
         super().__init__(name, violation_error_message=violation_error_message)
+        if not field:
+            raise ValueError(f"{self.__class__.__qualname__}.field must be set.")
         self.field = field
         if trigger_error_message is not None:
             self.trigger_error_message = trigger_error_message
         else:
             self.trigger_error_message = self.default_trigger_error_message
 
+    def _validate_field_name(self, model):
+        if self.field not in [f.attname for f in model._meta.concrete_fields]:
+            raise ValueError(f"{self.field} is not a concrete field of {model.__name__}.")
+
     def constraint_sql(self, model, schema_editor):
+        self._validate_field_name(model)
         # we can't embed the trigger sql into the "CREATE TABLE" statement
         warnings.warn(
             f"{self.__class__.__qualname__} doesn't support the {schema_editor.connection.vendor} backend. "
@@ -41,6 +48,7 @@ class DenyFieldUpdateTrigger(BaseConstraint):
         )
 
     def create_sql(self, model, schema_editor) -> str:
+        self._validate_field_name(model)
         name = schema_editor.quote_name(self.name)
         field = schema_editor.quote_name(self.field)
         table = schema_editor.quote_name(model._meta.db_table)
@@ -77,6 +85,7 @@ class DenyFieldUpdateTrigger(BaseConstraint):
         )
 
     def remove_sql(self, model, schema_editor) -> str:
+        self._validate_field_name(model)
         name = schema_editor.quote_name(self.name)
         table = schema_editor.quote_name(model._meta.db_table)
 
