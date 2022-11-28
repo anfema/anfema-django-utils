@@ -1,0 +1,29 @@
+anfema\_django\_utils.db.triggers
+=================================
+
+.. automodule:: anfema_django_utils.db.triggers
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      DenyFieldUpdateTrigger
+   
+   
+
+   
+   
+   
+
+
+

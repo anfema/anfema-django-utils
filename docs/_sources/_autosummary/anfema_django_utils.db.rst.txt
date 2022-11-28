@@ -29,4 +29,5 @@
 
    anfema_django_utils.db.functions
    anfema_django_utils.db.mixins
+   anfema_django_utils.db.triggers
 
