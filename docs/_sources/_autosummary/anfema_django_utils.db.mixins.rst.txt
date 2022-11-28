@@ -9,6 +9,12 @@ anfema\_django\_utils.db.mixins
 
    
    
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      snapshot_field_values
+   
    
 
    
@@ -17,7 +23,9 @@ anfema\_django\_utils.db.mixins
 
    .. autosummary::
    
+      ChangedFieldValuesMixinBase
       ChangedFieldValuesModelMixin
+      SnapshotFieldValuesModelMixin
    
    
 
