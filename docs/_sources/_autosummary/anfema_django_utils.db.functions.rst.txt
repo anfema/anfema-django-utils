@@ -18,6 +18,7 @@ anfema\_django\_utils.db.functions
    .. autosummary::
    
       Epoch
+      ExtractPathText
       NormalizeUmlauts
       RegexpReplace
       SubquerySum

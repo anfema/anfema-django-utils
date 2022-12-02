@@ -43,13 +43,16 @@
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Epoch</span></code>(*args, **kwargs)</p></td>
 <td><p>Postgres function to extract the epoch (i.e.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NormalizeUmlauts</span></code>(*args, **kwargs)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExtractPathText</span></code>(json_field_path, **extra)</p></td>
+<td><p>Postgres specific function to extract text from a JSONField at the specified path.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NormalizeUmlauts</span></code>(*args, **kwargs)</p></td>
 <td><p>Function to replace german umlauts in strings ('ä' -&gt; 'ae'...).</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RegexpReplace</span></code>(*args, **kwargs)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RegexpReplace</span></code>(*args, **kwargs)</p></td>
 <td><p>Postgres function to substitute text using regular expressions.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SubquerySum</span></code>(queryset, column[, output_field])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SubquerySum</span></code>(queryset, column[, output_field])</p></td>
 <td><p>Useful for subquery-sum aggregations in query annotations: Requires a subquery, column name and output_field type.</p></td>
 </tr>
 </tbody>
