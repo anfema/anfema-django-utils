@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models.constants import LOOKUP_SEP
+from django.utils.functional import cached_property
 
 
 """Collection of database functions (mostly postgres specific)"""
@@ -11,6 +13,28 @@ class Epoch(models.Func):
 
     function = 'EXTRACT'
     template = "%(function)s('epoch' from %(expressions)s)"
+
+
+class ExtractPathText(models.Func):
+    """
+    Postgres specific function to extract text from a JSONField at the specified path.
+
+    Usage:
+        ``ExtractPathText('jsonfield__path__to__key')``
+    """
+
+    function = 'jsonb_extract_path_text'
+
+    def __init__(self, json_field_path: str, **extra):
+        if LOOKUP_SEP not in json_field_path:
+            raise ValueError("Expected lookup path in the form <jsonfield>__<path__to__key>")
+        json_field, *path_elements = json_field_path.split(LOOKUP_SEP)
+        extra.setdefault('output_field', self.output_field)
+        super().__init__(models.F(json_field), *map(models.Value, path_elements), **extra)
+
+    @cached_property
+    def output_field(self):
+        return models.TextField()
 
 
 class NormalizeUmlauts(models.Func):
