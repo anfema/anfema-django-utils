@@ -12,10 +12,12 @@ Welcome to anfema-django-utils's documentation!
 
 .. autosummary::
    :toctree: _autosummary
+   :template: custom-module-template.rst
    :recursive:
 
    anfema_django_utils.apps
    anfema_django_utils.db
+   anfema_django_utils.caching
 
 
 Indices and tables
