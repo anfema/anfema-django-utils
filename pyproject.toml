@@ -11,22 +11,35 @@ keywords = ["django", "utils"]
 license = {text = "MIT"}
 classifiers = [
     "Framework :: Django",
-    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
 ]
 requires-python = ">=3.7"
-dependencies = ["Django"]
+dependencies = [
+    "Django",
+    "super-hash; python_version >= '3.9'"
+]
 dynamic = ["version"]
 
 
 [project.optional-dependencies]
 dev = [
     "black",
+    "isort",
 ]
 docs = [
     "Sphinx",
     "sphinx-autodoc-typehints",
+    "sphinx-rtd-theme",
+    "sphinx-copybutton",
 ]
-
+tests = [
+    "parametrize",
+]
 
 [tool.black]
 line-length = 120
