@@ -1,6 +1,10 @@
 anfema\_django\_utils.db.triggers
 =================================
 
+
+
+   
+
 .. automodule:: anfema_django_utils.db.triggers
 
    
@@ -16,6 +20,9 @@ anfema\_django\_utils.db.triggers
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
    
       DenyFieldUpdateTrigger
    
@@ -24,6 +31,3 @@ anfema\_django\_utils.db.triggers
    
    
    
-
-
-

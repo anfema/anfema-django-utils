@@ -1,6 +1,10 @@
 anfema\_django\_utils.db.mixins
 ===============================
 
+
+
+   
+
 .. automodule:: anfema_django_utils.db.mixins
 
    
@@ -12,6 +16,8 @@ anfema\_django\_utils.db.mixins
    .. rubric:: Functions
 
    .. autosummary::
+      :toctree:
+      :nosignatures:
    
       snapshot_field_values
    
@@ -22,6 +28,9 @@ anfema\_django\_utils.db.mixins
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
    
       ChangedFieldValuesMixinBase
       ChangedFieldValuesModelMixin
@@ -32,6 +41,3 @@ anfema\_django\_utils.db.mixins
    
    
    
-
-
-

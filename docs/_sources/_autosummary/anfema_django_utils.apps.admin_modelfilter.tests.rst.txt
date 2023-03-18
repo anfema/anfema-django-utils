@@ -1,6 +1,10 @@
 anfema\_django\_utils.apps.admin\_modelfilter.tests
 ===================================================
 
+
+
+   
+
 .. automodule:: anfema_django_utils.apps.admin_modelfilter.tests
 
    
@@ -16,6 +20,9 @@ anfema\_django\_utils.apps.admin\_modelfilter.tests
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
    
       ModelfilterTestCase
    
@@ -24,6 +31,3 @@ anfema\_django\_utils.apps.admin\_modelfilter.tests
    
    
    
-
-
-

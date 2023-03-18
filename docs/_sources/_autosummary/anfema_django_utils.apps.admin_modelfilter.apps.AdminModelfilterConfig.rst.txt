@@ -1,0 +1,34 @@
+anfema\_django\_utils.apps.admin\_modelfilter.apps.AdminModelfilterConfig
+=========================================================================
+
+.. currentmodule:: anfema_django_utils.apps.admin_modelfilter.apps
+
+.. autoclass:: AdminModelfilterConfig
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+     ~AdminModelfilterConfig.default_auto_field
+    
+    
+     ~AdminModelfilterConfig.name
+    
+    
+   
+   

@@ -1,0 +1,36 @@
+anfema\_django\_utils.db.triggers.DenyFieldUpdateTrigger
+========================================================
+
+.. currentmodule:: anfema_django_utils.db.triggers
+
+.. autoclass:: DenyFieldUpdateTrigger
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+     ~DenyFieldUpdateTrigger.constraint_sql
+     ~DenyFieldUpdateTrigger.create_sql
+     ~DenyFieldUpdateTrigger.deconstruct
+     ~DenyFieldUpdateTrigger.remove_sql
+     ~DenyFieldUpdateTrigger.validate
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+     ~DenyFieldUpdateTrigger.default_trigger_error_message
+    
+    
+   
+   

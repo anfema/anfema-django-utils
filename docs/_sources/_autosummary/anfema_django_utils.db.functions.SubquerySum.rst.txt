@@ -1,0 +1,31 @@
+anfema\_django\_utils.db.functions.SubquerySum
+==============================================
+
+.. currentmodule:: anfema_django_utils.db.functions
+
+.. autoclass:: SubquerySum
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+     ~SubquerySum.template
+    
+    
+   
+   

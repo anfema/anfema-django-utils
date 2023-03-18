@@ -1,6 +1,10 @@
 anfema\_django\_utils.db.functions
 ==================================
 
+
+
+   
+
 .. automodule:: anfema_django_utils.db.functions
 
    
@@ -16,6 +20,9 @@ anfema\_django\_utils.db.functions
    .. rubric:: Classes
 
    .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+      :nosignatures:
    
       Epoch
       ExtractPathText
@@ -28,6 +35,3 @@ anfema\_django\_utils.db.functions
    
    
    
-
-
-

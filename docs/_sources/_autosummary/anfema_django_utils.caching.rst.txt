@@ -1,0 +1,32 @@
+﻿anfema\_django\_utils.caching
+=============================
+
+
+
+   
+
+.. automodule:: anfema_django_utils.caching
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+      :nosignatures:
+   
+      cached_call
+   
+   
+
+   
+   
+   
+
+   
+   
+   

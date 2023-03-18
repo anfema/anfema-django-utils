@@ -1,0 +1,34 @@
+anfema\_django\_utils.db.functions.ExtractPathText
+==================================================
+
+.. currentmodule:: anfema_django_utils.db.functions
+
+.. autoclass:: ExtractPathText
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+     ~ExtractPathText.function
+    
+    
+     ~ExtractPathText.output_field
+    
+    
+   
+   

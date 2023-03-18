@@ -1,0 +1,31 @@
+anfema\_django\_utils.db.functions.RegexpReplace
+================================================
+
+.. currentmodule:: anfema_django_utils.db.functions
+
+.. autoclass:: RegexpReplace
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+     ~RegexpReplace.function
+    
+    
+   
+   

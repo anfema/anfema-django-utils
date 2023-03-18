@@ -1,0 +1,36 @@
+anfema\_django\_utils.apps.admin\_modelfilter.tests.ModelfilterTestCase
+=======================================================================
+
+.. currentmodule:: anfema_django_utils.apps.admin_modelfilter.tests
+
+.. autoclass:: ModelfilterTestCase
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+     ~ModelfilterTestCase.test_css_exists
+     ~ModelfilterTestCase.test_js_exists
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+     ~ModelfilterTestCase.modelfilter_css_file
+    
+    
+     ~ModelfilterTestCase.modelfilter_js_file
+    
+    
+   
+   

@@ -1,0 +1,31 @@
+anfema\_django\_utils.db.mixins.ChangedFieldValuesMixinBase
+===========================================================
+
+.. currentmodule:: anfema_django_utils.db.mixins
+
+.. autoclass:: ChangedFieldValuesMixinBase
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+     ~ChangedFieldValuesMixinBase.changed_field_values
+    
+    
+   
+   

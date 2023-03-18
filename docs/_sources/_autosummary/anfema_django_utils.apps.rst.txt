@@ -1,6 +1,20 @@
 ﻿anfema\_django\_utils.apps
 ==========================
 
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :template: custom-module-template.rst
+   :recursive:
+
+   
+   anfema_django_utils.apps.admin_modelfilter
+   
+   
+
 .. automodule:: anfema_django_utils.apps
 
    
@@ -18,14 +32,3 @@
    
    
    
-
-
-
-.. rubric:: Modules
-
-.. autosummary::
-   :toctree:
-   :recursive:
-
-   anfema_django_utils.apps.admin_modelfilter
-

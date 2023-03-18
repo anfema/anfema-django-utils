@@ -1,0 +1,6 @@
+anfema\_django\_utils.caching.cached\_call
+==========================================
+
+.. currentmodule:: anfema_django_utils.caching
+
+.. autofunction:: cached_call

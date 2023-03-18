@@ -1,0 +1,6 @@
+anfema\_django\_utils.db.mixins.snapshot\_field\_values
+=======================================================
+
+.. currentmodule:: anfema_django_utils.db.mixins
+
+.. autofunction:: snapshot_field_values

@@ -1,0 +1,32 @@
+anfema\_django\_utils.db.mixins.SnapshotFieldValuesModelMixin
+=============================================================
+
+.. currentmodule:: anfema_django_utils.db.mixins
+
+.. autoclass:: SnapshotFieldValuesModelMixin
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :nosignatures:
+   
+     ~SnapshotFieldValuesModelMixin.snapshot_field_values
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+     ~SnapshotFieldValuesModelMixin.current_field_value_snapshot
+    
+    
+   
+   
